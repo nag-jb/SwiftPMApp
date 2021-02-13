@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		1A1B45A225D7EA3E00928E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B45A025D7EA3E00928E98 /* LaunchScreen.storyboard */; };
 		1A1B45AD25D7EA3E00928E98 /* SwiftPMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B45AC25D7EA3E00928E98 /* SwiftPMAppTests.swift */; };
 		1A1B45B825D7EA3E00928E98 /* SwiftPMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B45B725D7EA3E00928E98 /* SwiftPMAppUITests.swift */; };
+		1A1B45C925D7EA7400928E98 /* ghibli_castle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B45C825D7EA7400928E98 /* ghibli_castle.png */; };
+		1A1B45CF25D7EC4200928E98 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1B45CE25D7EC4200928E98 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		1A1B45B325D7EA3E00928E98 /* SwiftPMAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPMAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1B45B725D7EA3E00928E98 /* SwiftPMAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPMAppUITests.swift; sourceTree = "<group>"; };
 		1A1B45B925D7EA3E00928E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1B45C825D7EA7400928E98 /* ghibli_castle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghibli_castle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1B45CF25D7EC4200928E98 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,7 @@
 		1A1B459425D7EA3D00928E98 /* SwiftPMApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A1B45C825D7EA7400928E98 /* ghibli_castle.png */,
 				1A1B459525D7EA3D00928E98 /* AppDelegate.swift */,
 				1A1B459725D7EA3D00928E98 /* SceneDelegate.swift */,
 				1A1B459925D7EA3D00928E98 /* ViewController.swift */,
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				1A1B45CE25D7EC4200928E98 /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = 1A1B459225D7EA3D00928E98 /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 1A1B458925D7EA3D00928E98;
+			packageReferences = (
+				1A1B45CD25D7EC4200928E98 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 1A1B459325D7EA3D00928E98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +244,7 @@
 			files = (
 				1A1B45A225D7EA3E00928E98 /* LaunchScreen.storyboard in Resources */,
 				1A1B459F25D7EA3E00928E98 /* Assets.xcassets in Resources */,
+				1A1B45C925D7EA7400928E98 /* ghibli_castle.png in Resources */,
 				1A1B459D25D7EA3D00928E98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A1B45CD25D7EC4200928E98 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A1B45CE25D7EC4200928E98 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1B45CD25D7EC4200928E98 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A1B458A25D7EA3D00928E98 /* Project object */;
 }
